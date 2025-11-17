@@ -5,6 +5,7 @@ import Dashboard from './components/Dashboard'
 import Products from './components/Products'
 import Inventory from './components/Inventory'
 import HealthStatus from './components/HealthStatus'
+import Notifications from './components/Notifications'
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard')
@@ -50,6 +51,12 @@ function App() {
           >
             System Health
           </button>
+          <button
+            className={activeTab === 'notifications' ? 'active' : ''}
+            onClick={() => setActiveTab('notifications')}
+          >
+            Notifications
+          </button>
         </nav>
 
         <main className="content">
@@ -57,6 +64,7 @@ function App() {
           {activeTab === 'products' && <Products />}
           {activeTab === 'inventory' && <Inventory />}
           {activeTab === 'health' && <HealthStatus healthStatus={healthStatus} />}
+          {activeTab === 'notifications' && <Notifications />}
         </main>
       </div>
     </div>

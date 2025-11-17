@@ -10,6 +10,7 @@ A full-stack web application demonstrating hybrid database architecture using **
 - ✅ **Express Backend** - RESTful API with PostgreSQL and Firebase Admin SDK
 - ✅ **React Frontend** - Modern UI with Vite, displaying real-time data
 - ✅ **Full-Stack Integration** - Complete end-to-end application
+- ✅ **Notifications Center** - Firestore-backed alerts viewer
 
 ## 📋 Prerequisites
 
@@ -204,6 +205,11 @@ GET http://localhost:4000/api/firestore/notifications/:userId
 - Backend connectivity status
 - PostgreSQL connection status
 - Firebase connection status (if configured)
+
+### Notifications Center
+- Reads notifications from Firestore via `/api/firestore/notifications/:userId`
+- Default user ID (seed data): `b2c3d4e5-f6a7-4890-b123-456789012345`
+- Enter any other user ID to filter alerts dynamically
 
 ## 🗄️ Database Information
 

@@ -1,0 +1,60 @@
+# =====================================================
+# Hybrid_DB_Project .gitignore
+# =====================================================
+
+# Credentials and Secrets
+**/postgres_credentials.txt
+**/*credentials*.txt
+**/*.env
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Firebase Service Account Keys
+**/*firebase-adminsdk*.json
+**/*service-account*.json
+**/*serviceAccount*.json
+**/firebase-service-account.json
+
+# Node modules
+node_modules/
+**/node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build outputs
+dist/
+build/
+*.min.js
+*.min.css
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Database dumps
+*.sql.backup
+*.dump
+
+# Package lock files (optional - uncomment if you want to ignore)
+# package-lock.json
+# yarn.lock
+
